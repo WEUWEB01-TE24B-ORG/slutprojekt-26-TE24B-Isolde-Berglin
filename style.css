@@ -28,6 +28,7 @@ body {
         "main aside"
         "footer footer";
 }
+
 /* header */
 header {
     grid-area: header;
@@ -46,20 +47,24 @@ header nav {
     text-align: center;
     font-size: 1.2rem;
 }
-header a{
+
+header a {
     padding: 10px;
     text-decoration: none;
     color: var(--iron-grey);
     background-color: var(--dust-grey);
     border-radius: 10px;
 }
-header a:hover{
+
+header a:hover {
     background-color: var(--cherry-blossom);
     padding: 7px;
 }
-header a.on{
+
+header a.on {
     background-color: var(--cherry-blossom);
 }
+
 /* main for intro page*/
 main {
     background-color: var(--dust-grey);
@@ -70,40 +75,61 @@ main {
     height: 100%;
     width: 100%;
 }
+
 /* main page for both animal pages */
-main h2{
+main h2 {
     font-size: 1.5rem;
     text-decoration: wavy underline;
     text-align: center;
 }
-main p{
+
+main p {
     font-size: 1.2rem;
 }
+
 /* For the animal pages aka page 1 and 2 */
-main .animal{ 
+main .animal {
     /* This will cover pages 2-4 */
-display: flex;
+    display: flex;
 }
-main .animal figure{
-size: 70%;
+
+main .animal figure {
+    size: 70%;
 }
-main .animal img{
-border-radius: 10px;
+
+main .animal img {
+    border-radius: 10px;
 }
+
 /* for the quiz aka page 4 */
-main button{
+main button {
     margin-left: 10px;
     padding: 5px;
     height: 2rem;
     margin-top: 15px;
-    background: var(--cherry-blossom);
+    background-color: var(--powder-petal);
     border-radius: 5px;
     border: var(--iron-grey) solid 2px;
 }
+
+main button:hover {
+    background: var(--cherry-blossom);
+}
+
+main .amount {
+    width: 3rem;
+    background-color: var(--ash-grey);
+    border: 2px solid var(--iron-grey);
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 2px;
+    border-radius: 2px;
+}
+
 /* aside */
 /* umm will have to move due to multiple reasonons */
 aside {
-    grid-area: aside; 
+    grid-area: aside;
     background-color: var(--dust-grey);
     margin: auto;
     padding: 15px;
@@ -111,10 +137,12 @@ aside {
     height: 100%;
     width: 100%;
 }
-aside p.aside a{
+
+aside p.aside a {
     text-decoration: none;
     color: var(--iron-grey);
 }
+
 /* footer */
 footer {
     background-color: var(--dust-grey);
@@ -124,7 +152,39 @@ footer {
     border-radius: 10px;
     width: 100%;
 }
-footer .name{
+
+footer .name {
     text-align: center;
     font-size: 1.2rem;
+}
+
+/* Mobil */
+@media (max-width: 480px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+
+        main .animal {
+            /* This will cover pages 2-4 for phones*/
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+
 }

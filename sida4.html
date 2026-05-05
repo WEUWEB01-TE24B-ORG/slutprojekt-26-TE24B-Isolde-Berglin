@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Four animals</title>
     <link rel="stylesheet" href="style.css">
+        <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -20,9 +21,12 @@
             </nav>
         </header>
         <main>
+            <h2>Quiz</h2>
+            <p>Time to take a quiz. click one of the sugestions for each question. Note that only one of them is
+                correct. GOOD LUCK</p>
             <div class="animal">
                 <p class="question">Which of the following is venomous?</p>
-                <button onclick="Correct"()>Platypus</button>
+                <button onclick="Correct()">Platypus</button>
                 <button>Prairie dog</button>
                 <button>Raven</button>
                 <!-- answer platypus -->
@@ -30,14 +34,14 @@
             <div class="animal">
                 <p class="question">Where are prairie dogs native to?</p>
                 <button>South america</button>
-                <button onclick="Correct"()>North america</button>
+                <button onclick="Correct()">North america</button>
                 <button>Europa</button>
                 <!-- Answer north america -->
             </div>
             <div class="animal">
                 <p class="question"> Are raccoons a common themes in the mythologies of the Indigenous peoples of the
                     Americas?</p>
-                <button onclick="Correct"()>Yes</button>
+                <button onclick="Correct()">Yes</button>
                 <button>No</button>
                 <!-- Answer Yes -->
             </div>
@@ -45,12 +49,13 @@
                 <p class="question">How long can a raccoon remember a task?</p>
                 <button>4 years</button>
                 <button>5 years</button>
-                <button onclick="Correct"()>3 years</button>
+                <button onclick="Correct()">3 years</button>
                 <!-- three years -->
             </div>
             <div class="box">
                 <P>Amount of right answers:</P>
-                <p class="amount"></p>
+                <p class="amount"> /4</p>
+                <button onclick="giveAnswer()">Give results</button>
             </div>
         </main>
         <aside>
@@ -70,6 +75,7 @@
             <p class="name">Video Bultfonteinite || 2026</p>
         </footer>
     </div>
+
 </body>
 
 </html>
