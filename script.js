@@ -1,8 +1,11 @@
+    let rightAnswer = 0;
 function Correct() {
-    let rightAnswer;
     rightAnswer = rightAnswer + 1;
 }
 function giveAnswer() {
-    let woo = rightAnswer;
-    document.querySelector("p.amount").textContent = rightAnswer + "/4"
+    document.querySelector(".right").style.backgroundColor = "green"
+    document.querySelector(".right1").style.backgroundColor = "green"
+    document.querySelector(".right2").style.backgroundColor = "green"
+    document.querySelector(".right3").style.backgroundColor = "green"
+    document.querySelector(".amount").textContent = rightAnswer + "/4"
 }
