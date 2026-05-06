@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 1500px;
+    width: 90rem;
     margin: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -78,13 +78,13 @@ main {
 
 /* main page for both animal pages */
 main h2 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     text-decoration: wavy underline;
     text-align: center;
 }
 
 main p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 /* For the animal pages aka page 1 and 2 */
@@ -160,7 +160,7 @@ footer .name {
 
 /* Mobil */
 @media (max-width: 480px) {
-    .container-grid {
+    .container {
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
@@ -169,15 +169,23 @@ footer .name {
             "aside"
             "footer";
 
-        main .animal {
-            /* This will cover pages 2-4 for phones*/
-            display: none;
-        }
+    }
+
+    main .animal {
+        /* This will cover pages 2-4 for phones*/
+        display: contents;
+    }
+    .intro{
+         width: 40rem;
+    }
+    .animal figure {
+        size: 30%;
     }
 }
+
 /* Ipad */
-@media (max-width: 750px) {
-    .container-grid {
+@media (max-width: 768px) {
+    .container {
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
@@ -185,6 +193,12 @@ footer .name {
             "main"
             "aside"
             "footer";
+        width: 50rem;
     }
-
+    .intro{
+         width: 50rem;
+    }
+    .animal figure {
+        size: 40%;
+    }
 }
