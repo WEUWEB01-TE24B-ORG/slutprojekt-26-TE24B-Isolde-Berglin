@@ -78,13 +78,13 @@ main {
 
 /* main page for both animal pages */
 main h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-decoration: wavy underline;
     text-align: center;
 }
 
 main p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 /* For the animal pages aka page 1 and 2 */
@@ -94,11 +94,12 @@ main .animal {
 }
 
 main .animal figure {
-    size: 70%;
+    size: 0.7rem;
 }
 
 main .animal img {
     border-radius: 10px;
+    size-adjust: 0.7rem;
 }
 
 /* for the quiz aka page 4 */
@@ -178,9 +179,6 @@ footer .name {
     .intro{
          width: 40rem;
     }
-    .animal figure {
-        size: 30%;
-    }
 }
 
 /* Ipad */
@@ -198,7 +196,7 @@ footer .name {
     .intro{
          width: 50rem;
     }
-    .animal figure {
-        size: 40%;
+    figure{
+         size: 0.5rem;
     }
 }
